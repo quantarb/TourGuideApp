@@ -7,28 +7,52 @@
     android:orientation="vertical"
     tools:context="com.example.johnnylee.tourguideapp.MainActivity">
 
-    <TextView
-        android:id="@+id/monuments"
-        style="@style/CategoryStyle"
-        android:background="@color/category_monuments"
-        android:text="@string/category_museums" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_monuments">
 
-    <TextView
-        android:id="@+id/museums"
-        style="@style/CategoryStyle"
-        android:background="@color/category_museums"
-        android:text="@string/category_monuments" />
+        <TextView
+            android:id="@+id/monuments"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_museums" />
+    </FrameLayout>
 
-    <TextView
-        android:id="@+id/restaurants"
-        style="@style/CategoryStyle"
-        android:background="@color/category_restaurant"
-        android:text="@string/category_restaurant" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_museums">
 
-    <TextView
-        android:id="@+id/parks"
-        style="@style/CategoryStyle"
-        android:background="@color/category_parks"
-        android:text="@string/category_parks" />
+        <TextView
+            android:id="@+id/museums"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_monuments" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_restaurant">
+
+        <TextView
+            android:id="@+id/restaurants"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_restaurant" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_parks">
+
+        <TextView
+            android:id="@+id/parks"
+            style="@style/CategoryStyle"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_parks" />
+    </FrameLayout>
 
 </LinearLayout>
