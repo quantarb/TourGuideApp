@@ -16,11 +16,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RestaurantsActivity" />
-        <activity android:name=".LocationActivity" />
-        <activity android:name=".ParksActivity" />
-        <activity android:name=".MuseumsActivity" />
-        <activity android:name=".MonumentsActivity"></activity>
+        <activity android:name=".MonumentsActivity"
+            android:label="@string/category_monuments"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".MuseumsActivity"
+            android:label="@string/category_museums"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".ParksActivity"
+            android:label="@string/category_parks"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".RestaurantsActivity"
+            android:label="@string/category_restaurants"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>

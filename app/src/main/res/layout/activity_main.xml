@@ -40,7 +40,7 @@
             android:id="@+id/restaurants"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_restaurant" />
+            android:text="@string/category_restaurants" />
     </FrameLayout>
 
     <FrameLayout
