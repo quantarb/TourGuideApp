@@ -13,11 +13,40 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView restaurants = (TextView) findViewById(R.id.restaurant);
-        restaurants.setOnClickListener(new View.OnClickListener() {
+
+        TextView phrases = (TextView) findViewById(R.id.monuments);
+        phrases.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, RestaurantActivity.class);
+                Intent i = new Intent(MainActivity.this, MonumentsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        TextView colors = (TextView) findViewById(R.id.museums);
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, MuseumsActivity.class);
+                startActivity(i);
+            }
+        });
+
+
+        TextView numbers = (TextView) findViewById(R.id.parks);
+        numbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ParksActivity.class);
+                startActivity(i);
+            }
+        });
+
+        TextView family = (TextView) findViewById(R.id.restaurants);
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, RestaurantsActivity.class);
                 startActivity(i);
             }
         });

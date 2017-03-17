@@ -6,26 +6,22 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class RestaurantActivity extends AppCompatActivity {
+public abstract class LocationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.location_list);
 
-        ArrayList<Location> locations = new ArrayList<Location>();
-
-        for(int i = 0; i < 10; i ++)
-        {
-            locations.add(new Location(R.string.category_restaurant + " i", "Address"));
-        }
-
-
-        LocationAdapter adapter = new LocationAdapter(this, locations, R.color.category_restaurant);
+        LocationAdapter adapter = new LocationAdapter(this, getLocations(), getColorResourceId());
 
         ListView listView = (ListView) findViewById(R.id.location_list);
 
         listView.setAdapter(adapter);
 
     }
+
+    protected abstract ArrayList<Location> getLocations();
+    protected abstract int getColorResourceId();
+
 }
