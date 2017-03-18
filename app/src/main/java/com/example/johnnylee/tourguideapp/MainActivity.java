@@ -6,49 +6,41 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         TextView phrases = (TextView) findViewById(R.id.monuments);
-        phrases.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, MonumentsActivity.class);
-                startActivity(i);
-            }
-        });
+        phrases.setOnClickListener(this);
 
         TextView colors = (TextView) findViewById(R.id.museums);
-        colors.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, MuseumsActivity.class);
-                startActivity(i);
-            }
-        });
-
+        colors.setOnClickListener(this);
 
         TextView numbers = (TextView) findViewById(R.id.parks);
-        numbers.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ParksActivity.class);
-                startActivity(i);
-            }
-        });
+        numbers.setOnClickListener(this);
 
         TextView family = (TextView) findViewById(R.id.restaurants);
-        family.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, RestaurantsActivity.class);
-                startActivity(i);
-            }
-        });
+        family.setOnClickListener(this);
     }
+
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.monuments:
+                startActivity(new Intent(MainActivity.this, MonumentsActivity.class));
+                break;
+            case R.id.museums:
+                startActivity(new Intent(MainActivity.this, MuseumsActivity.class));
+                break;
+            case R.id.parks:
+                startActivity(new Intent(MainActivity.this, ParksActivity.class));
+                break;
+            case R.id.restaurants:
+                startActivity(new Intent(MainActivity.this, RestaurantsActivity.class));
+        }
+    }
+
+
 }

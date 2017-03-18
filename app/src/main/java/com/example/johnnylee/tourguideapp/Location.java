@@ -12,21 +12,11 @@ public class Location {
         return mName;
     }
 
-    public void setName(String name) {
-        this.mName = mName;
-    }
-
-
     private String mAddress;
 
     public String getAddress() {
         return mAddress;
     }
-
-    public void setAddress(String address) {
-        this.mAddress = address;
-    }
-
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
@@ -36,11 +26,7 @@ public class Location {
         return mImageResourceId;
     }
 
-    public void setImageResourceId(int imageResourceId) {
-        this.mImageResourceId = imageResourceId;
-    }
-
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
