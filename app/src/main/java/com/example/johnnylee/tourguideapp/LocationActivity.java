@@ -12,16 +12,18 @@ public abstract class LocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.location_list);
-
         LocationAdapter adapter = new LocationAdapter(this, getLocations(), getColorResourceId());
-
         ListView listView = (ListView) findViewById(R.id.location_list);
-
         listView.setAdapter(adapter);
-
     }
 
     protected abstract ArrayList<Location> getLocations();
     protected abstract int getColorResourceId();
+
+    public String getStringResourceByName(String s) {
+        String packageName = getPackageName();
+        int resId = getResources().getIdentifier(s, "string", packageName);
+        return getString(resId);
+    }
 
 }

@@ -1,9 +1,46 @@
 <resources>
-    <string name="app_name">Tour Guide App</string>
+    <string name="app_name">San Francisco Tour Guide</string>
 
     <string name="category_monuments">Monuments</string>
     <string name="category_museums">Museums</string>
     <string name="category_parks">Parks</string>
     <string name="category_restaurants">Restaurants</string>
+
+    <string name="monument1_name">Francis Scott Key Monument</string>
+    <string name="monument1_address">Music Concourse, San Francisco, CA 94118</string>
+    <string name="monument2_name">Palace Of Fine Arts</string>
+    <string name="monument2_address">3301 Lyon St, San Francisco, CA 94123</string>
+    <string name="monument3_name">Golden Hill Monument</string>
+    <string name="monument3_address">2005 Hillside Blvd, Colma, CA 94014</string>
+    <string name="monument4_name">Karin Maru Monument</string>
+    <string name="monument4_address">1164 El Camino Del Mar, San Francisco, CA 94121</string>
+
+    <string name="museum1_name">San Francisco Museum of Modern Art</string>
+    <string name="museum1_address">151 3rd St, San Francisco, CA 94103</string>
+    <string name="museum2_name">Exploratorium</string>
+     <string name="museum2_address">Pier 15, San Francisco, CA 94111</string> 
+    <string name="museum3_name">Legion of Honor</string> 
+    <string name="museum3_address">100 34th Avenue, San Francisco, CA 94121</string> 
+    <string name="museum4_name">The Walt Disney Family Museum</string> 
+    <string name="museum4_address">104 Montgomery St, San Francisco, CA 94129</string>
+
+    <string name="park1_name">Mission Dolores Park</string>
+    <string name="park1_address">19th and Dolores St, San Francisco, CA 94114</string>
+     <string name="park2_name">Grandview Park</string> 
+    <string name="park2_address">14th Ave, San Francisco, CA 94122</string> 
+    <string name="park3_name">Golden Gate Park</string> 
+    <string name="park3_address">501 Stanyan St, San Francisco, CA 94117</string> 
+    <string name="park4_name">Strawberry Hill</string> 
+    <string name="park4_address">501 Stanyan St, San Francisco, CA 94117</string>
+
+    <string name="restaurant1_name">Liholiho Yacht Club</string>
+     <string name="restaurant1_address">871 Sutter St, San Francisco, CA 94109</string>
+     <string name="restaurant2_name">Miyako Old Fashioned Ice Cream</string> 
+    <string name="restaurant2_address">1470 Fillmore St, San Francisco, CA 94118</string>
+     <string name="restaurant3_name">Milkbean</string> 
+    <string name="restaurant3_address">881 Post St, San Francisco, CA 94109</string> 
+    <string name="restaurant4_name">Nopa</string> 
+    <string name="restaurant4_address">560 Divisadero St, San Francisco, CA 94117</string>
+
 
 </resources>

@@ -16,11 +16,10 @@ public class ParksActivity extends LocationActivity {
 
         ArrayList<Location> locations = new ArrayList<Location>();
 
-        for (int i = 0; i < 10; i++)
-        {
-            locations.add(new Location("Park", "Address"));
-        }
-
+        locations.add(new Location(getString(R.string.park1_name), getString(R.string.park1_address), R.drawable.park1_image));
+        locations.add(new Location(getString(R.string.park2_name), getString(R.string.park2_address), R.drawable.park2_image));
+        locations.add(new Location(getString(R.string.park3_name), getString(R.string.park3_address), R.drawable.park3_image));
+        locations.add(new Location(getString(R.string.park4_name), getString(R.string.park4_address), R.drawable.park4_image));
 
         return locations;
     }

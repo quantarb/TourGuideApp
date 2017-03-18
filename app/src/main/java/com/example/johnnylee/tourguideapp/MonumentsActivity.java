@@ -16,11 +16,10 @@ public class MonumentsActivity extends LocationActivity {
 
         ArrayList<Location> locations = new ArrayList<Location>();
 
-        for (int i = 0; i < 10; i++)
-        {
-            locations.add(new Location("Monument", "Address"));
-        }
-
+        locations.add(new Location(getString(R.string.monument1_name), getString(R.string.monument1_address), R.drawable.monument1_image));
+        locations.add(new Location(getString(R.string.monument2_name), getString(R.string.monument2_address), R.drawable.monument2_image));
+        locations.add(new Location(getString(R.string.monument3_name), getString(R.string.monument3_address), R.drawable.monument3_image));
+        locations.add(new Location(getString(R.string.monument4_name),getString(R.string.monument4_address), R.drawable.monument4_image));
 
         return locations;
     }

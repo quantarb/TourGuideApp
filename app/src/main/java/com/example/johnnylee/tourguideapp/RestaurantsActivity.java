@@ -16,10 +16,10 @@ public class RestaurantsActivity extends LocationActivity {
 
         ArrayList<Location> locations = new ArrayList<Location>();
 
-        for (int i = 0; i < 10; i++)
-        {
-            locations.add(new Location("Restaurant", "Address"));
-        }
+        locations.add(new Location(getString(R.string.restaurant1_name), getString(R.string.restaurant1_address), R.drawable.restaurant1_image));
+        locations.add(new Location(getString(R.string.restaurant2_name), getString(R.string.restaurant2_address), R.drawable.restaurant2_image));
+        locations.add(new Location(getString(R.string.restaurant3_name), getString(R.string.restaurant3_address), R.drawable.restaurant3_image));
+        locations.add(new Location(getString(R.string.restaurant4_name), getString(R.string.restaurant4_address), R.drawable.restaurant4_image));
 
 
         return locations;
@@ -27,7 +27,7 @@ public class RestaurantsActivity extends LocationActivity {
 
     @Override
     protected int getColorResourceId() {
-        return R.color.category_restaurant;
+        return R.color.category_restaurants;
     }
 
 

@@ -16,7 +16,7 @@
             android:id="@+id/monuments"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_museums" />
+            android:text="@string/category_monuments" />
     </FrameLayout>
 
     <FrameLayout
@@ -28,13 +28,13 @@
             android:id="@+id/museums"
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
-            android:text="@string/category_monuments" />
+            android:text="@string/category_museums" />
     </FrameLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/category_restaurant">
+        android:background="@color/category_restaurants">
 
         <TextView
             android:id="@+id/restaurants"

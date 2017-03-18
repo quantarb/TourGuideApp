@@ -16,10 +16,10 @@ public class MuseumsActivity extends LocationActivity {
 
         ArrayList<Location> locations = new ArrayList<Location>();
 
-        for (int i = 0; i < 10; i++)
-        {
-            locations.add(new Location("Museum", "Address"));
-        }
+        locations.add(new Location(getString(R.string.museum1_name), getString(R.string.museum1_address), R.drawable.museum1_image));
+        locations.add(new Location(getString(R.string.museum2_name), getString(R.string.museum2_address), R.drawable.museum2_image));
+        locations.add(new Location(getString(R.string.museum3_name), getString(R.string.museum3_address), R.drawable.museum3_image));
+        locations.add(new Location(getString(R.string.museum4_name), getString(R.string.museum4_address), R.drawable.museum4_image));
 
 
         return locations;
